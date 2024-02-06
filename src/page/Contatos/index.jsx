@@ -1,6 +1,13 @@
+import Header from "../../components/header"
+import Footer from "../../components/footer"
+
 function Contatos() {
     return (
-        <h1>Contatos</h1>
+        <>
+            <Header />
+            <h1>Contatos</h1>
+            <Footer />
+        </>
     )
 }
 
