@@ -1,13 +1,16 @@
 import Header from "../../components/header"
 import Footer from "../../components/footer"
+import Container from "../../components/Container"
 
 function Projetos() {
     return (
         <>
-            <Header />
-            <h1>Projetos</h1>
-            <Footer />
-        </>
+        <Header />
+        <Container>
+            <h2>Projetos</h2>
+        </Container>
+        <Footer />
+    </>
     )
 }
 

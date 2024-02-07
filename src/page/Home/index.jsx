@@ -1,27 +1,36 @@
-import Header from "../../components/header"
-import Footer from "../../components/Footer"
-import { Link } from "react-router-dom"
+import Header from "../../components/header";
+import Footer from "../../components/Footer";
+import { Link } from "react-router-dom";
+import Container from "../../components/Container";
+import styles from './Home.module.css'
 
-
-function Home(){
-    return (
-        <>
-        <Header />
-        <section className="container">
-          <div className="apresentacao">
-            <p>Olá sou <br />
-            <span>Elano Silva</span> <br />
-            Dev Full Stack</p>
-            <Link to="/sobre" className="btn btn-red">Saiba mais sobre mim</Link>
+function Home() {
+  return (
+    <>
+      <Header />
+      <Container>
+        <section className={styles.home}>
+          <div className={styles.apresentacao}>
+            <p>
+              Olá sou <br />
+              <span>Elano Silva</span> <br />
+              Dev Full Stack
+            </p>
+            <Link to="/sobre" className={`${styles.btn} ${styles.btn_red}`}>
+              Saiba mais sobre mim
+            </Link>
           </div>
           <figure>
-            <img className="img-home" src="/developer-red.svg" alt="Imagem de Home"/>
+            <img
+              className={styles.img_home}
+              src="/developer-red.svg"
+              alt="Imagem de Home"/>
           </figure>
         </section>
-        <Footer />
-        </>
-    )
+      </Container>
+      <Footer />
+    </>
+  );
 }
 
-
-export default Home
+export default Home;

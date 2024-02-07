@@ -1,11 +1,14 @@
 import Header from "../../components/header"
 import Footer from "../../components/footer"
+import Container from "../../components/Container"
 
 function Sobre() {
     return (
         <>
             <Header />
-            <h1>Titulo</h1>
+            <Container>
+                <h2>Sobre</h2>
+            </Container>
             <Footer />
         </>
     )
